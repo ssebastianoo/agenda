@@ -1,8 +1,22 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const config = require('./config');
 const fetch = require('node-fetch');
+
+try {
+    const config = require('./config');
+} catch (e) {
+    config = {
+        port: process.env.PORT,
+        user: process.env.user,
+        password: process.env.password,
+        agenda: {
+            from: process.env.agenda_from,
+            to: process.env.agenda_to
+        }
+    }
+    }
+}
 
 const url = 'https://web.spaggiari.eu/rest/v1';
 let userid;
