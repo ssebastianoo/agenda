@@ -3,8 +3,9 @@ const app = express();
 const path = require('path');
 const fetch = require('node-fetch');
 
+let config;
 try {
-    const config = require('./config');
+    config = require('./config');
 } catch (e) {
     config = {
         port: process.env.PORT,
@@ -14,7 +15,6 @@ try {
             from: process.env.agenda_from,
             to: process.env.agenda_to
         }
-    }
     }
 }
 
