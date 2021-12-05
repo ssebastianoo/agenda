@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Agenda ClasseViva</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Readex+Pro&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="agenda" id="agenda">
+            <% agenda.forEach(item => { %>
+                <div class="item" id="<%= item.evtId %>">
+                    <%= item.evtId %>
+                    <h3 class="author"><%= item.authorName %></h3>
+                    <p class="date"><span><%= item.time %></span></p>
+                    <p class="notes"><%= item.notes %></p>
+                </div>
+            <% }) %>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

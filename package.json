@@ -1,0 +1,28 @@
+{
+  "name": "agenda",
+  "version": "1.0.0",
+  "description": "a better calendar for classeviva",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssebastianoo/agenda.git"
+  },
+  "keywords": [
+    "agenda",
+    "classeviva"
+  ],
+  "author": "ssebastianoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssebastianoo/agenda/issues"
+  },
+  "homepage": "https://github.com/ssebastianoo/agenda#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.6"
+  }
+}

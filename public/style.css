@@ -1,0 +1,40 @@
+:root {
+    --font: 'Readex Pro', sans-serif;
+    --first-color: #181a1b;
+    --second-color: white;
+    --third-color: #31343b;
+    --fourth-color: #1b4bab
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+
+.agenda {
+    margin-top: 20px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.item {
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 300px;
+    background-color: var(--third-color);
+    box-shadow: 5px 5px var(--fourth-color);
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.date span {
+    background-color: var(--first-color);
+    padding: 3px 3px;
+    border-radius: 5px;
+}
+
+.notes {
+    line-height: 1.5;
+}
